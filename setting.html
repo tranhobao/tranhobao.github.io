@@ -90,14 +90,51 @@
 
 
   <!-- news section -->
-
+  <!--LINUX-->
   <section class="news_section layout_padding">
     <div class="container">
       <div class="d-flex flex-column align-items-end">
         <div class="custom_heading-container">
           <hr>
           <h2>
-            Cách cài đặt
+            Cách cài đặt Linux
+          </h2>
+
+        </div>
+        <p>
+          Chỉ cần tải về rồi dùng thôi nè ~
+        </p>
+      </div>
+
+      <!--Bắt đầu sửa-->
+
+      <p>1. Download App</p>
+      <!-- <div class="setting_container">
+        <a class="copyTextButton" data-clipboard-target="#content1" href="#null" title="Copy">Copy</a>
+      </div>
+      <pre class="codetoClipboard" id="content1">
+        sudo apt-get install python3
+      </pre> -->
+  
+      <p>2. Giải nén file</p>
+      <!-- <div class="setting_container">
+        <a class="copyTextButton" data-clipboard-target="#content1" href="#null" title="Copy">Copy</a>
+      </div>
+      <pre class="codetoClipboard" id="content1">
+        sudo pip install youtube-dl
+      </pre> -->
+
+      <p>3. Vào thư mục dist và chạy file gui.py</p>
+  </section>
+  <!--END LINUX-->
+  <!--WINDOWS-->
+  <section class="news_section layout_padding">
+    <div class="container">
+      <div class="d-flex flex-column align-items-end">
+        <div class="custom_heading-container">
+          <hr>
+          <h2>
+            Cách cài đặt Windows
           </h2>
 
         </div>
@@ -126,7 +163,7 @@
 
       <p>3. Chỉnh sửa đường dẫn</p>
       <pre class="codetoClipboard" id="content1">
-        Vào đường dẫn cài đặt python3: usr/lib/python3/dist-package/youtube-dl/extractor/youtube.py
+        Vào đường dẫn cài đặt python3: C:\Users\'Tên Users'\AppData\Local\Programs\Python\Python311\Lib\site-packages\youtube_dl\extractor\youtube.py
       </pre>
       <p>Chỉnh sửa từ - Before</p>
       <!--Before-->
@@ -134,8 +171,7 @@
         <a class="copyTextButton" data-clipboard-target="#content1" href="#null" title="Copy">Copy</a>
       </div>
       <pre class="codetoClipboard" id="content1">
-        'uploader_id': self._search_regex(r'/(?:channel|user)/([^/?&#]+)', owner_profile_url, 'uploader id')
-         if owner_profile_url else None
+        self._search_regex(r'/(?:channel|user)/([^/?&#]+)', owner_profile_url, 'uploader id') if owner_profile_url else None
       </pre>
       <!--After-->
       <p>Chỉnh sửa thành - After</p>
@@ -143,8 +179,7 @@
         <a class="copyTextButton" data-clipboard-target="#content1" href="#null" title="Copy">Copy</a>
       </div>
       <pre class="codetoClipboard" id="content1">
-        'uploader_id': self._search_regex(r'/(?:channel|user)/([^/?&#]+)', owner_profile_url, 'uploader id' , 
-        fatal=False ) if owner_profile_url else None
+        'After: 'uploader_id': self._search_regex(r'/(?:channel|user)/([^/?&#]+)', owner_profile_url, 'uploader id' , fatal=False ) if owner_profile_url else None
       </pre>
 
       <p>4. Cài đặt tkinter</p>
@@ -156,6 +191,7 @@
       </pre>
       </div>
   </section>
+  <!--END WINDOWS-->
       <style>
         .setting_container{background-color: #fff; 
         border: 1px
